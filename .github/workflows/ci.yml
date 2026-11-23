@@ -14,3 +14,4 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+# deliberately bad PR: touching an off-limits file

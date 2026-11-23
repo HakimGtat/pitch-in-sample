@@ -13,3 +13,7 @@ test("slugify collapses repeated separators and trims the ends", () => {
 test("slugify returns an empty string for text with no letters or digits", () => {
   assert.equal(slugify("!!!"), "");
 });
+
+test("slugify turns accented letters into plain letters", () => {
+  assert.equal(slugify("Crème Brûlée"), "creme-brulee");
+});
